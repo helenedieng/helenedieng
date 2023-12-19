@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'Inscription</title>
+  <!-- Liaison aux fichiers CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">Formulaire d'Inscription ESTM</h2>
+            <form action="site2.php" method="post">
+              <div class="mb-3">
+                <label for="nom" class="form-label">Nom de l'étudiant</label>
+                <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez le nom complet" required>
+              </div>
+              <div class="mb-3">
+                <label for="filiere" class="form-label">Filière</label>
+                <input type="text" class="form-control" id="filiere" name="filiere" placeholder="Entrez la filière" required>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="date_naissance" class="form-label">Date de Naissance</label>
+                  <input type="date" class="form-control" id="date_naissance" name="date_naissance" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Adresse Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Entrez l'adresse email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="adresse" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Entrez l'adresse" required>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Liaison aux fichiers JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
